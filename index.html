@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bem-vindo!</title>
+    <style>
+        /* Esse é um código completo derivado do W3schools. Ele utiliza de atributos de lista, tanto ordenada
+        quanto desordenada, para construir a barra de navegação do site. Encontre o código fonte aqui:
+        https://www.w3schools.com/css/css_navbar_horizontal.asp*/
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+        li:last-child {
+            border-right: none;
+        }
+        li a {
+            display: block;
+            color: snow;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: #04aa6d;
+        }
+        body {
+            background-color: #085ed7;
+            background-image: url(imagem-de-fundo.jpg);
+        }
+        /*O código do W3schools acaba aqui. */
+        /*Esse código define a imagem de avatar.*/
+        #Perfil {
+            margin-left: auto;
+            margin-right: auto;
+            width: 180px;
+            display: flex;
+        }
+        /*Esse código centraliza os textos 'h1'.*/
+        h1 {
+            text-align: center;
+        }
+        /*Os dois próximos blocos definem o ícone de menu esquerdo (três barras horizontais).*/
+        .Menu-esquerdo > div {
+            width: 35px;
+            height: 5px;
+            background-color: white;
+            margin: 6px 0;
+        }
+        .Menus > .Menu-esquerdo {
+            float: left;
+            clear: none;
+        }
+      /*Os dois próximos blocos caracterizam o ícone de menu direito (três bolinhas). */
+        #Opções {
+            width: 60px;
+        }
+        .Menus > .Menu-direito {
+            float: right;
+        }
+        /*Esse código define como os textos 'título' devem aparecer.*/
+        .Títulos {
+            display: table;
+            background: yellow;
+            text-align: center;
+            padding: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /*Esse código define como os textos 'conteúdo' devem aparecer.*/
+        .Conteúdo-textual {
+            display: flex;
+            margin-left: 1%;
+            margin-right: 1%;
+            flex-wrap: wrap;
+            color: white;
+        }
+        /*Esse código define a cor do texto principal.*/
+        #Texto-principal {
+            color: white;
+        }
+        /*Este fomulário foi tirado da W3schools. Ele usa extensivamente do elemento HTML "input" (por motivos óbvios).
+        As pseudo-classes "focus" e "hover" foram adicionados por mim para garantir uma experiência mais satisfatória e 
+        relaxante.*/
+        input[type="submit"] {
+            width: 100%;
+            background-color: #8704c9;
+            color: white;
+            padding: 14px 20px;
+            margin: 30px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+        }
+        input[type="text"] {
+            width: 97%;
+            padding: 14px;
+            border: 2px solid #8704c9;
+        }
+        input[type="text"]:focus {
+            border: 3px solid #640387;
+        }
+        input[type="submit"]:hover {
+            background-color: #640387;
+    }
+        .Formulário {
+            border-radius: 5px;
+            background-color: #ffffff;
+            padding: 20px;
+    }
+        /*O formulário da W3schools acaba aqui.*/
+        /*Esse código define a fonte de texto da página.*/
+        html {
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <body>
+        <!--Esse código trás à tona a barra de navegação, e indica o destino de cada botão. Ele também pula
+        uma linha, no final.-->
+        <ul>
+            <li><a href="#C1">Formações</a></li>
+            <li><a href="#C2">Experiências</a></li>
+            <li><a href="#C3">Soft-skills/ Hard-skills</a></li>
+            <li style="float: right"><a href="#C4">Fomulário</a></li>
+        </ul>
+        <br>
+        <!--Esse código define ambos os menus (esquerdo e direito).-->
+        <div class="Menus">
+            <div class="Menu-esquerdo">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        <div class="Menu-direito">
+            <img id="Opções" src="3 pontos ícone.png" alt="ícone de opções" />
+        </div>
+        </div>
+        <!--Esse código insere a imagem de perfil.-->
+        <img id="Perfil" src="imagem de perfil.png" alt="Imagem de perfil" />
+        <!--Esse código define o texto principal.-->
+        <h1 id="Texto-principal">Miguel Pereira Lima, a seu dispor</h1>
+        <!--Os próximos blocos conterão grande parte do conteúdo da página. Ele inclui os textos 'título' e 'conteúdo' e 
+        infere uma posição à eles (C1, C2, C3 e C4).-->
+        <h1 class="Títulos">Sobre mim</h1>
+        <div class="Conteúdo-textual">
+            <h2>
+                Programador-aprendiz atualmente trabalhando com tecnologias de front e
+                back-end.
+            </h2>
+            <h2>
+                Meu sonho é virar um programador profissional e alcançar uma carreira de
+                sucesso nos Estados Unidos.
+            </h2>
+            <h2>
+                Você pode me contatar a partir do email: miguel.p.rograma@gmail.com
+            </h2>
+        </div>
+        <h1 id="C1" class="Títulos">Formações</h1>
+        <div class="Conteúdo-textual">
+            <h2>
+            Atualmente estudando no SENAI Almirante Tamandaré através do curso: "
+            Técnico em Desenvolvimento de Sistemas".
+        </h2>
+        </div>
+        <h1 id="C2" class="Títulos">Experiências</h1>
+        <div class="Conteúdo-textual">
+            <h2>
+            Eu já me expus a vários projetos a partir do meu curso. Alguns projetos
+            pessoais também merecem algum reconhecimento.
+        </h2>
+        </div>
+        <h1 id="C3" class="Títulos">Soft-skills</h1>
+        <div class="Conteúdo-textual">
+            <h2>
+            Eu me comunico relativamente bem. Proponho um desempenho animado e
+            energético.
+        </h2>
+        </div>
+        <h1 class="Títulos">Hard-skills</h1>
+        <div class="Conteúdo-textual">
+            <h2>
+            Possuo um conhecimento básico de HTML, CSS e Python. Ampliamento de
+            conhecimentos futuros planejados.
+        </h2>
+        </div>
+        <h1 id="C4" class="Títulos">Fomulário de comunicação</h1>
+        <!--O código do conteúdo de textos 'título' e 'conteúdo' acaba aqui.-->
+        <!--Esse código define o formulário.-->
+        <div class="Formulário">
+            <form>
+                <label for="fname"><h2>Nome</h2></label>
+                <input
+                    type="text"
+                    id="fname"
+                    name="firstname"
+                    placeholder="Seu nome..."
+                />
+                <label for="lname"><h2>Sobrenome</h2></label>
+                <input
+                    type="text"
+                    id="lname"
+                    name="lastname"
+                    placeholder="Seu sobrenome..."
+                />
+                <label for="country"><h2>Email</h2></label>
+                <input
+                    type="text"
+                    id="email"
+                    name="lastname"
+                    placeholder="Seu email..."
+                />
+                <label for="country"><h2>Mensagem</h2></label>
+                <input
+                    type="text"
+                    id="message"
+                    name="lastname"
+                    placeholder="Sua mensagem..."
+                />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </body>
+</html>
